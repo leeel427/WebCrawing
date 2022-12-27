@@ -38,8 +38,8 @@ try:
     if not os.path.exists(myfolder):    # 폴더 생성
         os.mkdir(myfolder)
 
-        for mydir in weekday_dict.values():
-            mypath = myfolder + mydir
+        for my_dir in weekday_dict.values():
+            mypath = myfolder + my_dir
             if os.path.exists(mypath):
                 pass
             else:       # '월요일'부터 '일요일'까지 폴더 생성
@@ -96,6 +96,5 @@ myframe.to_csv(filename, encoding='UTF-8', index=False)
 print(filename + '파일로 저장됨')
 print('\n finished')
 
-
-
+urlopen().close()
 
